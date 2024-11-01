@@ -69,7 +69,7 @@ class ShoppingMall {
       // cart의 키(상품 이름)들을 List로 변환하여 join
       List<String> cartItems = cart.keys.toList();
       String itemsList = cartItems.join(', ');
-      print('장바구니에 ${itemsList}가 담겨있네요. 총 ${totalCost}원 입니다!');
+      print('장바구니에 ${itemsList}(이)가 담겨있네요. 총 ${totalCost}원 입니다!');
     }
   }
 
@@ -98,7 +98,6 @@ class ShoppingMall {
       print('장바구니를 초기화합니다.');
       cart.clear();
       totalCost = 0;
-      print('장바구니가 초기화되었습니다.');
     }
   }
 }
